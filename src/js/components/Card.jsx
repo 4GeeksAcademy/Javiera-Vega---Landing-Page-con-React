@@ -33,15 +33,19 @@ export const Card = () => {
                 {
                     datos.map((datos, index) => {
                         return (
-                            <div key={index} className="card col-12-col-sm-6 col-md-3 mt-3 p-3">
-                                <img src={datos.image} className="card-img-top" alt="Card image" />
-                                <div className="card-body">
-                                    <h5 className="card-title p-0">{datos.cardTitle}</h5>
-                                    <p className="card-text">{datos.cardText}</p>
-                                    <div className="card-button col-3 bg-transparent border-secondary w-100">
-                                        <a href="#" className="btn btn-primary d-grid gap-2 col-8 mx-auto">{datos.button}</a>
+                            <div key={index} className="col-12-col-sm-6 col-md-3 mt-3">
+                                <div className="border">
+                                    <img src={datos.image} className="card-img-top" alt="Card image" />
+                                    <div className="card-body p-3">
+                                        <h5 className="card-title p-0">{datos.cardTitle}</h5>
+                                        <p className="card-text">{datos.cardText}</p>
+                                        <div className="card-button col-3 bg-transparent border-secondary w-100">
+                                            <a href="#" className="btn btn-primary d-grid gap-2 col-8 mx-auto">{datos.button}</a>
+                                        </div>
                                     </div>
+
                                 </div>
+
                             </div>)
                     })
                 }
