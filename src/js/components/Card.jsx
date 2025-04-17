@@ -37,8 +37,8 @@ export const Card = () => {
                                 <div className="border">
                                     <img src={datos.image} className="card-img-top" alt="Card image" />
                                     <div className="card-body p-3">
-                                        <h5 className="card-title p-0">{datos.cardTitle}</h5>
-                                        <p className="card-text">{datos.cardText}</p>
+                                        <h5 className="card-title text-center p-0">{datos.cardTitle}</h5>
+                                        <p className="card-text text-center">{datos.cardText}</p>
                                         <div className="card-button col-3 bg-transparent border-secondary w-100">
                                             <a href="#" className="btn btn-primary d-grid gap-2 col-8 mx-auto">{datos.button}</a>
                                         </div>
